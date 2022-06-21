@@ -1,0 +1,9 @@
+name: 'Composite action'
+description: 'Greetings'
+runs:
+  using: "composite"
+  steps:
+    - name: Hi
+      run: echo "Hi!"
+    - name: Bye
+      run: echo "Bye!"
