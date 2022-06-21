@@ -5,5 +5,7 @@ runs:
   steps:
     - name: Hi
       run: echo "Hi!"
+      shell: bash
     - name: Bye
       run: echo "Bye!"
+      shell: bash
