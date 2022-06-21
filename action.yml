@@ -1,10 +1,18 @@
 name: 'Composite action'
 description: 'Greetings'
+inputs:
+  versionB:
+    description: "versionB"
+    required: true
+    default: "1.0.0"
 runs:
   using: "composite"
   steps:
     - name: Hi
       run: echo "Hi!"
+      shell: bash
+    - name: versionB
+      run: echo ${{inputs.versionB}}
       shell: bash
     - name: Bye
       run: echo "Bye!"
