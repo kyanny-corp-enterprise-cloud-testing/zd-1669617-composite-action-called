@@ -10,7 +10,6 @@ jobs:
     name: A job to say hello
     steps:
       - uses: actions/checkout@v3
-      - run: ls -lah
       - run: echo "=== START ==="
-      - uses: ./action.yml
+      - uses: ./
       - run: echo "=== END ==="
